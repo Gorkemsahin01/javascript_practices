@@ -1,0 +1,176 @@
+
+*{
+  /* "*" işareti tüm sayfayı kaplayacak şekilde olduğunu ifade eder */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 8px;
+}
+
+body {
+
+     
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #333;
+
+}
+
+
+
+.btn{
+   border: 1px solid steelblue;
+  
+    background: #333;
+    color: aliceblue;    
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: whitesmoke;
+    color: #333;
+    border-radius: 5px;
+}
+ 
+
+h1{
+    text-align: center;
+    padding: 1.5rem;
+    color: aquamarine;
+}
+
+p{
+padding: 1.6rem;
+text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+header{
+    height: 30rem;
+  
+}
+
+header .bg-image{
+
+/* position absolute olduğundan sayfanın başlangıcından hareket ediyordu yazılar bu sayede alltan resmin olduğu yere geldi */
+
+ position: absolute;
+    background-image: url(images/birbirinden-guzel-hareketli-20-manzara.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+#section-b{
+    padding: 2rem;
+
+}
+
+#section-b li{
+    list-style: none;
+    margin-bottom: 1.5rem;
+
+}
+
+.col-content{
+    padding: 1.5rem;
+}
+
+
+
+#section-c{
+    padding: 3rem;
+    background-color: aliceblue;
+    color: #333;
+}
+
+
+#section-d .box{
+    padding: 3rem;
+    
+}
+
+
+#section-d .box:first-child{
+
+    background-color:darkslategray
+}
+
+footer{
+    padding: 3rem;
+    background-color: black;
+}
+
+footer a{
+   color: cornflowerblue;
+}
+
+
+@media  screen and (min-width:800px ) {
+
+    html{
+        font-size: 10px;
+    }
+    
+}
+
+@media  screen and (min-width:1200px) {
+
+    /* bu şekildee responsive tasarladığımız için bilgisayarda bu ayarlarda telefonda alt alta olan resimler yan yana gelecektir. */
+
+    html {
+        font-size: 12px;
+    }
+
+  #section-b li {
+
+    width: 28%;
+    margin:1%;
+    display: inline-block;
+
+  }
+  .box {
+    width: 50%;
+    float: left;
+
+  }
+
+  
+    
+}
+
+/* bu kodla iki block yan yana geliyor üstteki widhte bağlı olarak */
+
+.gorkem::after{
+    content: "";
+    display:inline;
+    clear: both;
+  }

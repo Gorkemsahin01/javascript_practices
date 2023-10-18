@@ -1,0 +1,509 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato" sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+.conteiner{
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+
+}
+.col{
+    float: left;
+    width: 100%;
+    padding: 1rem;
+    
+}
+
+@media (min-width:576px) {
+ 
+    .conteiner{
+       max-width: 540px;
+    }
+    html{
+        font-size: 7px;
+    }
+
+    
+}
+@media (min-width:768px) {
+
+    .conteiner{
+        max-width: 720px;
+    }
+
+    html{
+        font-size: 8px;
+    }
+    .col{
+        width: 50%;
+    }
+    
+}
+@media (min-width:992px) {
+
+    .conteiner {
+
+        max-width: 960px;
+    }
+html{
+    font-size: 9px;
+}
+.col{
+    max-width: 33.333%;
+}
+    
+    
+}
+@media (min-width:1200px) {
+
+    .conteiner{
+        max-width: 1140px;
+    }
+    html{
+        font-size: 10px;
+    }
+    
+}
+
+
+/* Navbar */
+nav {
+
+    width: 100%;
+    font-family: montserrat;
+    background-color: #2C3E4F;
+    color: aliceblue;
+    padding-top: 3rem;
+ padding-bottom: 3rem;
+ position: fixed;
+}
+
+#logo-box .logo{
+
+    color:#fff ;
+    font-weight: 700;
+    font-size: 2.8rem;
+
+}
+
+#logo-box{
+    float: left;
+    padding-top: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix::after{
+    display: block;
+    clear: both;
+    content: "";
+
+}
+
+
+
+.text-uppercase{
+    text-transform:uppercase ;
+}
+
+#nav-links{
+    float: right;
+   
+}
+#nav-links .nav-item{
+    padding: 1.5rem;
+    float: left;
+    padding-bottom: 1.5rem;
+    margin: 0.5rem;
+}
+
+
+#nav-links .nav-link{
+
+color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.1s;
+
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+#nav-links .nav-link:hover{
+
+    color: #1ABC9B;
+}
+
+header {
+    height: 700px;
+    background-color: #1ABC9B;
+    padding-top: calc(156px + 5rem);
+    text-align: center;
+}
+
+.img-prof{
+    max-width: 200px;
+    height: auto;
+
+}
+
+header h1{
+
+    color:#fff;
+    font-size: 4rem;
+
+}
+
+i{
+    font-size: 6rem;
+    color:darkred;
+}
+.nav-link i{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.nav-link i:hover{
+    color: #1ABC9B;
+}
+  #nav-links .nav-icon {
+
+    display: none;
+
+}
+
+@media (max-width: 992px){
+
+
+#logo-box{
+    float: none;
+    text-align: left;
+}
+
+#nav-links{
+    float: none;
+
+}
+
+#nav-links .nav-link{
+font-size: 2rem;
+padding-left: 0 ;
+
+}
+
+#nav-links .nav-item{
+
+    float: none;
+    text-align: left;
+}
+ #nav-links .nav-icon{
+   display: block; 
+   position: absolute;
+   top: 10px;
+   right: 5px;
+ }
+
+#nav-links.responsive li:not(:first-child){
+
+    display: none;
+}
+
+
+
+}
+
+
+
+header h2{
+    font-size: 2.5rem;
+    color:#0a1e31;
+    font-weight: 700;
+    
+}
+
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    
+}
+
+#about h2{
+    font-size: 4.5rem;
+    color: #2C3E4F;
+    text-align: center;
+}
+
+
+/* resim eklemek için 3 tane ayrı kolon oluşturuyoruz. Aşağıdaki col ve about item ile CSS özelliklerini yazıp sayfada yan yana ayrı 3 tane kolon oluşturuyoruz */
+
+
+
+
+
+/* Üzerinide gediğimizde hover özelliği olacağı için position ve display özelliği bu şekilde oluyor */
+.about-item{
+
+    position: relative;
+}
+
+.about-item img{
+    display: block;
+    border-radius: 13px;
+}
+
+.img-fluid-a{
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+.img-overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1ABC9B;
+    opacity: 0;
+    
+}
+
+.img-overlay .icon{
+    color: #fff;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-item:hover .img-overlay{
+
+    opacity: 0.8;
+border-radius: 13px;
+}
+
+#hakkimda{
+    background-color: #1ABC9B;
+    color: #fff;
+   
+}
+
+#hakkimda h2{
+    font-size: 5rem;
+}
+
+/* About'un altındaki çizgi için lazım olan CSS kodları */
+.star-light{
+    border: none;
+    border-top: 0.4rem solid;
+    border-radius: 10px;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0  ;
+}
+
+
+#about-text{
+    text-align: left;
+
+}
+
+#about-text .left{
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+    
+}
+
+#about-text .right{
+    float: none;
+    width: 100%;
+    padding-left:5px;
+   padding-right: 25px;
+}
+
+#about-text .text{
+    font-size: 2rem;
+}
+@media (min-width:992px){
+    #about-text .left{
+        float: left;
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 210px;
+    }
+    #about-text .right{
+        float: right;
+        width: 50%;
+        padding-right: 210px;
+        padding-left: 10px;
+    }
+}
+
+#btn-large{
+    font-size: 2rem;
+
+}
+
+#btn{
+    padding: 2rem;
+    margin-top: 3rem;
+    color: #fff;
+    background-color:transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-weight: 400  ;
+    display: inline-block;
+   cursor: pointer;
+   transition: all .5s;
+}
+
+#btn:hover{
+    color: #212529;
+  background-color: #fff;
+}
+
+#hakkimda i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+/* Contack bölümü */
+
+#Contact-me h2{
+    font-size: 7rem;
+    color: #2c3e50; 
+}
+
+#Contact-form{
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+}
+
+.form-group{
+    border-bottom: 3px solid #2C3E4F;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.5rem;
+
+}
+
+.form-group input:focus{
+    outline: none;
+
+}
+
+.form-group textarea:focus{
+    outline: none;
+
+}
+#btn-contact{
+    padding: 2rem;
+    margin-top: 3rem;
+   color:#fff;
+   background-color:#1ABC9B;
+   
+    border: 2px solid black;
+    border-radius: 8rem;
+    font-weight: 400  ;
+   cursor: pointer;
+   transition: all .5s;
+     float: left;
+}
+
+ 
+#btn-contact:hover{
+    color: #fff;
+    background-color:#0a1e31;
+}
+
+/* footer kısmı */
+
+footer{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2C3E4F;
+    color: #fff;
+    text-align: center;
+}
+
+footer h4{
+
+    font-size: 2.5rem;
+}
+
+footer p{
+
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-social{
+    padding: 2rem;
+    margin-top: 3rem;
+   color:#fff;
+   background-color:#1ABC9B;
+   
+    border: 2px solid black;
+    border-radius: 50%;
+    font-weight: 400  ;
+   cursor: pointer;
+   transition: all .5s;
+     float: left;
+}
+
+
+
+footer li{
+    display: inline-block;
+    list-style-type: none;
+  
+}
+
+.copyright{
+    background-color: #19262f ;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: #fff;
+    text-align: center;
+}

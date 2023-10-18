@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+
+
+<style>
+
+ .kutu{
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: gray
+ }
+
+#kutu1{
+    border: 2px solid red;
+}
+#kutu2{
+
+border: 3px solid blue;
+
+/* radius kenarlarını yuvarlak yapıyor */
+
+ border-radius: 10px ;
+}
+ 
+  #kutu3{
+    /* sadece belli kenarlarada border verebiliriz */
+  border-right: 5px groove slateblue;
+  }
+</style>
+
+</head>
+<body>
+
+
+    <div class="kutu" id="kutu1">kutu1</div>
+    <div class="kutu" id="kutu2">kutu2</div>
+    <div class="kutu" id="kutu3">kutu3</div>
+    
+</body>
+</html>

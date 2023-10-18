@@ -1,0 +1,38 @@
+h1[title="Görkem"]{
+    color: black;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+h1[title="Bengü"]{
+
+    color: fuchsia;
+    font-size: 45px;
+    text-align: center;
+}
+
+input[title="text"]{
+    color: blue;
+
+}
+
+input[title="button"]{
+    color: darkred;
+    
+}
+
+/* Pseudo Selectors */
+
+ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul li:first-child{
+    background-color: brown;
+}
+
+ul li:last-child{
+    background-color: chartreuse;
+}

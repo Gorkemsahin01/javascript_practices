@@ -101,3 +101,23 @@ ul li.checked{
 ul li.checked::before{
     background-image: url(images/190411.png);
 }
+
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size:30px ;
+    color: red;
+    line-height: 40px;
+    text-align: center;
+   
+   
+}
+
+ul li span:hover{
+    background: #edeef0;
+
+}

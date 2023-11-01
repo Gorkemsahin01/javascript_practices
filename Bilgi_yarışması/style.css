@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: linear-gradient(cadetblue,purple);
+    width: 100%;
+    height: 100vh;
+    display: block;
+
+
+
+}
+
+.container {
+
+
+    width: 90%;
+    height: 35rem;
+    max-width: 60rem;
+    margin: 10rem auto 0;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.bilgi {
+    font-size: 2.5rem;
+    background-color: salmon;
+    border-radius: 1rem;
+    color: black;
+}
+
+.next-btn {
+
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 4rem;
+    border: 0;
+    width: 15rem;
+    color: #fff;
+    background-color: darkblue;
+    cursor: pointer;
+    display: block;
+}
+
+.next-btn:hover {
+    border-radius: 2rem;
+    background-color: darkgreen;
+}
+
+.gorkem {
+    padding: 2rem 0;
+}
+
+.gorkem h2 {
+    font-weight: 2rem;
+    color: #001e4d;
+    font-weight: 600;
+
+
+
+}
+
+.btn {
+    background: #fff;
+    color: #001e4d;
+    width: 100%;
+    border: 2px solid #222;
+    padding: 1.5rem;
+    margin: 1.2em 0;
+    text-align: left;
+    border-radius: 4px ;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.btn:hover {
+    background-color: #222;
+    color: #fff;
+
+}

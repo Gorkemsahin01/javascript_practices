@@ -1,4 +1,4 @@
-const question=[
+const questions=[
     {
         question:"who is the most handsome man in the world",
         answers:[
@@ -37,3 +37,48 @@ const question=[
 
 const questionElement=document.getElementById("question");
 const answerButtton=document.getElementById("answer-button");
+const nextButton= document.getElementById("next-btn");
+
+
+
+
+
+
+let currentQuestionİndex=0;
+let score=0;
+
+function startQuiz(){
+    currentQuestionİndex=0;
+    score=0;
+    nextButton.innerHTML="Next";
+    showQestion();
+}
+
+function showQestion(){
+
+    resetState();
+let currentQuestion=questions[currentQuestionİndex];
+let questionNo=currentQuestionİndex+ 1;
+questionElement.innerHTML=questionNo+ "."+currentQuestion.question;
+    
+
+
+
+currentQuestion.answers.forEach(answers => {
+    const button =document.createElement("button");
+    button.innerHTML=answer.text;
+    button.classList.add("btn");
+    answerButtton.appendChild(button);
+    
+});
+}
+
+function resetState(){
+    nextButton.style.display= "none";
+    while(answerButttons.firstChild){
+        answerButttons.removeChild(answerButttons.firstChild);
+    }
+
+
+}
+startQuiz();

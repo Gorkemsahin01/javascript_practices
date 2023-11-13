@@ -28,9 +28,11 @@ body {
 
 .bilgi {
     font-size: 2.5rem;
-    background-color: salmon;
+    background-color: black;
     border-radius: 1rem;
-    color: black;
+    color: #fff;
+    text-align: center;
+   
 }
 
 .next-btn {
@@ -52,7 +54,7 @@ body {
 }
 
 .gorkem {
-    padding: 2rem 0;
+    padding: 2rem 0 ;
 }
 
 .gorkem h2 {
@@ -82,4 +84,13 @@ body {
     background-color: #222;
     color: #fff;
 
+}
+
+#question{
+
+margin: 1rem;
+background: fixed;
+text-decoration: dashed;
+font-size:  2rem; 
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

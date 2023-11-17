@@ -33,24 +33,36 @@
 
 #  UYGULAMA
 
-names=["Ali","Yağmur","Hakan","Deniz"]
-years=[1998,2000,1998,1987]
+# names=["Ali","Yağmur","Hakan","Deniz"]
+# years=[1998,2000,1998,1987]
 
-names.append("cenk")
-# sena değerini listenin başına ekle?
-names.insert(0,"Sena")
+# names.append("cenk")
+# # sena değerini listenin başına ekle?
+# names.insert(0,"Sena")
 
-# deniz ismini listeden çıkar?
-names.remove("Deniz")
-# ali listenin bir elemanımıdır?
+# # deniz ismini listeden çıkar?
+# names.remove("Deniz")
+# # ali listenin bir elemanımıdır?
 
-result="Ali" in names
-print(result)
+# result="Ali" in names
+# print(result)
 
-# years dizisinde kaç tane 1998 vardır?
-result=years.count(1998)
-print(result)
+# # years dizisinde kaç tane 1998 vardır?
+# result=years.count(1998)
+# print(result)
 
 
-print(names)
+# print(names)
 
+
+
+# x,y,z=2,5,107
+# numbers=1,5,7,10,6
+
+# sayi1=int(input("1.sayiyi giriniz: "))
+# sayi2=int(input("2.sayıyı giriniz: "))
+
+
+# sonuc=(sayi1*sayi2)-(x+y+z)
+
+# print("sonuç: ",sonuc)

@@ -1,4 +1,3 @@
-
 // // Değişkenler
 
 // var ad;
@@ -10,15 +9,10 @@
 
 // // Const sabittir ve orada ne yazdıysak sadece onu okur başka bir yerde değişkeni değiştirisek onu okumaz
 
-
 // const email="gorkemsahin012@gmail.com ";
 // console.log(email);
 
-
-
 // *******************************************************************************
-
-
 
 // // Aritmetik operatörler
 
@@ -31,29 +25,21 @@
 // veri=a*b;
 // veri=c++;
 
-
 // // Karşılaştırma operatörleri
 
-// veri= a==b; 
+// veri= a==b;
 
+// veri =a%b;
 
-
-// veri =a%b;  
-
-// veri = a!=b;  
-
-
+// veri = a!=b;
 
 // // Mantıksal operatörler
 
 // // && (and) iki önermeninde doğru olması gerekiyor
 
-
 // veri= (a>b) && (a>c);
 
-
 // // || (or) iki önermeden biri doğru olsa bile true değerini döndürür
-
 
 // veri= (b>a) || (a>c)
 
@@ -66,11 +52,7 @@
 // console.log( typeof veri);
 // console.log(c);
 
-
-
-
 // ************************************************************************
-
 
 // DATE OBJECT
 
@@ -79,7 +61,6 @@
 // // Set Methods zamanı kendimiz belirleyebiliriz.
 
 // zaman.setFullYear(2023);
-
 
 // //  Get Methods istediğimiz zaman aralığını alabiliriz
 // console.log(zaman.getDay());
@@ -90,19 +71,12 @@
 // console.log(zaman);
 // console.log( typeof zaman);
 
-
-
 // ************************************************************************
-
-
 
 // NUMBERS
 
-
 // var sayi= 15.56465453;
 // //  veri= sayi.toFixed(3); virgülden sonra kaç basamak istiyorsak o kadar yazdırır
-
-
 
 // veri=Math.PI;
 // // veri=Math.pow(4,3) üs alma
@@ -115,26 +89,18 @@
 
 // // veri= Math.floor(Math.random()*10) 0 ile 10 arasında random sayı üretir floor yazmamızın sebebi virgülden sonrasını istemediğimiz için, 10 yerine 100 yazarsakta 0 ile 100  arasında random sayı üretir
 
-
 // console.log(veri);
 // console.log( typeof veri);
 
-
-
 // **************************************************************************
 
-
-
 // STRİNGS
-
 
 // const firstname="Görkem";
 // const lastname="Şahin";
 // const age ="24";
 
-
 // let veri;
-
 
 // veri=firstname+" "+lastname;
 
@@ -144,69 +110,48 @@
 
 // // veri=veri.slice(2,8); 2.harften 8. harfe kadarki harfleri ekrana yazdırır.
 
-
 // // veri=veri.indexOf("R"); İçerisindeki harfi arama işlemi
 
-// // veri=veri.replace( "Görkem", "Bengü") İçerisindeki birşeyi değiştirmek istiyorsak 
+// // veri=veri.replace( "Görkem", "Bengü") İçerisindeki birşeyi değiştirmek istiyorsak
 
-
-// // veri=veri.length; yazdığımız şeyin uzunluğu hakkında bilgi verir. 
-
-
+// // veri=veri.length; yazdığımız şeyin uzunluğu hakkında bilgi verir.
 
 // console.log(veri);
 // console.log(typeof veri);
 
-
-
-
 // **********************************************************************************
-
-
 
 // // ARRAYS
 
-
 // let name=["Görkem","Bengü","Can","ülkü"];
 // let years=[2015,1999,1881,1938];
-
 
 // console.log(name);
 // console.log(typeof name);
 // console.log(years);
 
-
 // // get array item   diziden istediğimiz elemana ulşamak için
 
-
 // console.log(name[1]);
-
 
 // //  add and Remove item
 
 // name.push("Yaren");
 // console.log(name);
 
-// // name.unshift("İlayda");      Dizinin   Başına ekleme 
+// // name.unshift("İlayda");      Dizinin   Başına ekleme
 // console.log(name);
-
-
 
 // // years.pop()
 // // console.log(years);   dizinin son elamanını çıkardı
 
-
 // //  İndexof
-
 
 // // let index = name.indexOf("ülkü");   Eleman aramak istediğimzide bu yapıyı kullanırız
 // // console.log("index:" + index);
 
-
-
 // // name.reverse();  dizideki elemanları tersten sıralama yapar
 // // console.log(name);
-
 
 // // years.sort()
 // // console.log(years);
@@ -214,29 +159,18 @@
 // // name.sort()
 // // console.log(name);
 
-
-
 // // let veri =name.concat(years);    iki dizinin elemanlarını birleştirme
 // console.log(veri);
 
-
-
-
 // ************************************************************************************
 
-
-
 //  İF-ELSE
-
-
 
 // const firstname="Görkem"
 // const userNAme="gorkemsahin01"
 // const age= 24;
 
 // const school ="unıversity"
-
-
 
 // if(userNAme=="gorkemsahin01"){
 
@@ -246,26 +180,13 @@
 //     console.log("sg lann yavsak");
 // }
 
-
 // // if(age==24){
 // //     console.log("yaslanmışsın ");
 // // }
 
-
-
-
-
-
 // *********************************************************************************
 
-
-
-
-
-
 // Switch koşul yapısı
-
-
 
 // let islem = 5;
 
@@ -285,11 +206,7 @@
 //         default:
 //             console.log("islem yapılmayacak");
 
-
-
-
 // }
-
 
 // let day=2;
 
@@ -316,18 +233,13 @@
 
 // break;
 
-
-
 // }
 
 // console.log(day);
 
-
-
 // let saat=12;
 
 // switch (true) {
-
 
 //     case (saat >= 6 && saat <= 12):
 //         console.log("Gunaydın yavru");
@@ -345,23 +257,9 @@
 //             console.log("yanlış zaman");
 // }
 
-
-
-
-
-
-
 // *********************************************************************************************
 
-
-
-
-
-
 //  OBJECT LİTERALS    Kullanıcların verilerini kolayca takip etmek ve daha kolay erişmek için kullanıyoruz
-
-
-
 
 // let veri;
 
@@ -372,7 +270,7 @@
 //     lastName:"ŞAhin",
 //     age:24,
 //     hobbies: ["kitap okumak",   "kahve içmke",  "sex"],
-         
+
 //     address : {
 //         city:"Adana ",
 //         country:"Türkiye",
@@ -384,38 +282,22 @@
 // veri=user.hobbies;
 // veri=user.address.country;
 
-
 // console.log(veri);
 // console.log(typeof user);
 
-
-
-
-
 // *****************************************************************************************
-
-
-
-
-
-
-
-
 
 // DÖNGÜLER
 
-
 //  While Loop
-
 
 // let i=0;
 
 // while (i<10) {
 //     console.log(i);
 //     i++;
-    
-// }
 
+// }
 
 // let i=0;
 
@@ -425,20 +307,14 @@
 //     i++;
 //     if (i==8) {
 
-        
 //         console.log("görkem baba");
 //         break
-        
+
 //     }
-    
+
 // }
 
-
-
-
 //  For Döngüsü
-
-
 
 // for(let i=0; i<10; i++){
 
@@ -448,8 +324,6 @@
 //   console.log(i);
 // }
 
-
-
 // let toplam=0;
 
 // for(i=0; i<10; i++){
@@ -458,43 +332,24 @@
 //    }
 // console.log(toplam);
 
-
-
-
-
-
-
-
 // ***************************************************************************************
-
-
-
-
-
 
 //  DİZİLERDE VE OBJELERDE DÖNGÜ KULLANIMI
 
-
 // let cities=["adana","istanbul","ankara","izmir"]
-
-
 
 // for(let i=0; i<cities.length; i++){
 //     console.log(cities[i]);
 // }
 
-
 // cities.forEach(function(item) {
 
 //     console.log(item);
-    
+
 // })
 
-
 // let users=  [
-    
-    
-    
+
 // {firstName:"Görkem", lastName:"Şahin"},
 // {firstName:"Dilek", lastName:"Şahin"},
 // {firstName:"Can", lastName:"Şavkın"},
@@ -502,14 +357,10 @@
 
 // ]
 
-
-
-
 // // for(let i=0; i<users.length; i++){
 
 // //     console.log(users[i].firstName);
 // // }
-
 
 // let veri= users.map(function(item){
 
@@ -518,95 +369,57 @@
 // });
 // console.log(veri);
 
-
-
-
-
-
 // ***********************************************************************************
 
-
-
-
-
-
 // FONKSİYONLAR
-
-
-
-
 
 // function merhaba() {
 
 //     console.log("Görkem Şahin");
-    
+
 // }
 // merhaba();
-
-
 
 // function user(name,age) {
 
 //     console.log(`adınız: ${name}  yaşınız: ${age}`);
-    
+
 // }
 
 // user("Dilek",43);
 // user("Görkem",24);
 
-
-
-
 // function YasHesaplama(dogumyili) {
-
 
 //     yas=2023-dogumyili
 // console.log(`yaşınız: ${yas}`);
-    
+
 // }
 
 // // YasHesaplama(1999);
-
-
-
 
 // function ehliyetAlabilme(name,age) {
 
 //     let yas;
 
-
 //     console.log(`adınızı giriniz: ${name}  yaşınızı giriniz: ${age}`);
 
 //     if(yas>18){
 //         console.log("ehliyeti aldınız");
-        
+
 //     }
 //      else{
 //         console.log("Ehliyet alamazsın daha küçüksün amk çocuğu");
 //     }
-    
+
 // }
 
 // ehliyetAlabilme("Görkem ",15);
 // ehliyetAlabilme("Bengü",35);
 
-
-
-
-
 // **********************************************************************************************
 
-
-
-
-
-
-
 // WİNDOWS OBJELERİ
-
-
-
-
 
 // console.log(window);
 
@@ -620,15 +433,15 @@
 // veri2=confirm("çıkmak istiyonmu cidden")
 // console.log(veri2);
 
-
 // location
 
 // veri=window.location;
 // console.log(veri);
 
-
-
 //  konsola window.document yazdığımızda tüm sitelerin kodlarını görüyorsun
 
+const a = [1, 2, 3]
+const b = [4, 5, 6]
+const c = [...a, ...b]
 
-
+console.log(c)

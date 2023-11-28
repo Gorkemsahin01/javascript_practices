@@ -90,3 +90,8 @@
 years=[1983,1999,2005,1956,1985]
 ages=[2023-years for years in years]
 print(ages)
+
+
+
+
+

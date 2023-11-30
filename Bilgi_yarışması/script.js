@@ -29,26 +29,110 @@ const questions = [
   },
 ]
 
+// const questionElement = document.getElementById('question')
+// const answerButton = document.getElementById('answer-button')
+// const nextButton = document.getElementsByClassName('next-btn')
+
+// const answer1 = document.getElementsByClassName('btn1')
+// const answer2 = document.getElementsByClassName('btn2')
+// const answer3 = document.getElementsByClassName('btn3')
+// const answer4 = document.getElementsByClassName('btn4')
+
+// console.log(answer1[0].innerHTML)
+// console.log(answer2[0].innerHTML)
+// console.log(answer3[0].innerHTML)
+// console.log(answer4[0].innerHTML)
+
+// let a = questionElement.innerHTML
+// a = questions[0]
+// console.log(a)
+
+// showquestion()
+
+// function showquestion() {
+//   questionElement.innerHTML = questions[0].question
+// }
+
+// let firstAnswer = questions[0].answers[0].text
+// answer1[0].innerHTML = firstAnswer
+
+// let secondAnswer = questions[0].answers[1].text
+// answer2[0].innerHTML = secondAnswer
+
+// let thirdAnswer = questions[0].answers[2].text
+// answer3[0].innerHTML = thirdAnswer
+
+// let fourtAnswer = questions[0].answers[3].text
+// answer4[0].innerHTML = fourtAnswer
+
+// nextButton.addEventListener('click', () => {
+//   const selectedAnswer = questions[currentQuestionIndex].answers[0]
+
+//   if (selectedAnswer.correct) {
+//     console.log('Correct!')
+//     console.log('Incorrect!')
+//   }
+
+//   currentQuestionIndex++
+
+//   if (currentQuestionIndex < questions.length) {
+//     showQuestion()
+//   } else {
+//     console.log('Quiz finished!')
+//   }
+// })
+
 const questionElement = document.getElementById('question')
-const answerButton = document.getElementById('answer-button')
-const nextButton = document.getElementById('#next-btn')
+const answerButtons = document.querySelectorAll('.btn1, .btn2, .btn3, .btn4')
+const nextButton = document.querySelector('.next-btn')
 
-let a = questionElement.innerHTML
-a = questions[0]
-console.log(a)
+let currentQuestionIndex = 0
 
-showquestion()
+showQuestion()
 
-function showquestion() {
-  questionElement.innerHTML = questions[0].question
+function showQuestion() {
+  const currentQuestion = questions[currentQuestionIndex]
+  questionElement.innerHTML = currentQuestion.question
+
+  currentQuestion.answers.forEach((answer, index) => {
+    answerButtons[index].innerHTML = answer.text
+    answerButtons[index].addEventListener('click', () => {
+      checkAnswer(answer.correct)
+    })
+  })
 }
 
-let b = questions[0].answers()
+function checkAnswer(isCorrect) {
+  if (isCorrect) {
+    // Handle correct answer
+    console.log('Correct!')
+  } else {
+    // Handle wrong answer
+    console.log('Wrong!')
+  }
 
-console.log(b)
+  // Move to the next question
+  currentQuestionIndex++
 
-showAnswers()
-
-function showAnswers() {
-  answerButton.innerHTML = b.text
+  // Check if there are more questions
+  if (currentQuestionIndex < questions.length) {
+    showQuestion()
+  } else {
+    // No more questions, quiz is finished
+    console.log('Quiz finished!')
+  }
 }
+
+// Add event listener for the next button
+nextButton.addEventListener('click', () => {
+  // Move to the next question
+  currentQuestionIndex++
+
+  // Check if there are more questions
+  if (currentQuestionIndex < questions.length) {
+    showQuestion()
+  } else {
+    // No more questions, quiz is finished
+    console.log('Quiz finished!')
+  }
+})
